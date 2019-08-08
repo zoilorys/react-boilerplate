@@ -38,6 +38,7 @@
     "no-restricted-globals": "off",
     "no-restricted-properties": "off",
     "camelcase": "off",
-    "react/no-array-index-key": "off"
+    "react/no-array-index-key": "off",
+    "react/prop-types": "off"
   }
 }

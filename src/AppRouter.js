@@ -3,13 +3,16 @@ import { hot } from 'react-hot-loader';
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
 
+import Layout from './layout/Layout';
 import Routes from './Routes';
 
 import config from './config';
 
 const AppRouter = () => (
   <Router>
-    <Routes />
+    <Layout>
+      <Routes />
+    </Layout>
   </Router>
 );
 
