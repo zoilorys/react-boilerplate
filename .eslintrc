@@ -1,0 +1,43 @@
+{
+  "extends": "airbnb",
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true
+  },
+  "settings": {
+    "import/resolver": "webpack"
+  },
+  "rules": {
+    // I think using .jsx extension is unnecessary
+    "react/jsx-filename-extension": false,
+    // there is cases, specifically in redux, that you might have sigle action/constant,
+    // but you still want it to be named export
+    "import/prefer-default-export": false,
+    // this is not needed, cause webpack will take care of it
+    "import/no-extraneous-dependencies": false,
+    // this is handled by prettier
+    "object-curly-newline": "off",
+    "indent": "off",
+    "comma-dangle": ["error", "always-multiline", { "functions": "never" }],
+    "implicit-arrow-linebreak": "off",
+    "react/jsx-indent": "off",
+    "react/jsx-one-expression-per-line": "off",
+    "arrow-parens": "off",
+    "function-paren-newline": "off",
+    // this is good recommendation, but I know what I am doing
+    "react/no-did-update-set-state": "off",
+    "react/forbid-prop-types": "off",
+    "class-methods-use-this": "off",
+    "no-plusplus": "off",
+    "no-restricted-globals": "off",
+    "no-restricted-properties": "off",
+    "camelcase": "off",
+    "react/no-array-index-key": "off"
+  }
+}
